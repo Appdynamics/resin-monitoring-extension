@@ -76,6 +76,14 @@ You can also add excludePatterns (regex) to exclude any metric tree from showing
 
 ##Metrics
 
+* CacheStore: DataCount, LoadCountTotal, LoadFailCountTotal, MnodeCount, ObjectCount, SaveCountTotal, SaveFailCountTotal
+* ClusterServer: MessageQueueSize, ServerCpuLoadAvg, ConnectionKeepaliveCountTotal, ConnectionBusyCountTotal, IdleTime, Weight, ClusterIdleTime, SocketTimeout, ConnectionFailCountTotal, ConnectTimeout, ClusterIndex, Port, RecoverTime, LatencyFactor, ConnectionNewCountTotal, WarmupTime, ConnectionActiveCount, ConnectionMin, ConnectionIdleCount, MessageQueueLargeSize
+* ConnectionPool: MinIdleCount, MaxOverflowConnections, MaxConnections, MaxPoolTime, ConnectionFailCountTotal, MaxCreateConnections, MaxActiveTime, ConnectionCreateCount, MaxIdleTime, ConnectionActiveCount, ConnectionWaitTime, ConnectionIdleCount, MaxIdleCount, ConnectionCreateCountTotal, ConnectionCount, ConnectionCountTotal
+* Memory: EdenFree, TenuredFree, TenuredMax, TenuredUsed, TenuredCommitted, PermGenMax, SurvivorCommitted, GarbageCollectionTime, EdenMax, PermGenCommitted, GarbageCollectionCount, EdenUsed, CodeCacheFree, CodeCacheMax, SurvivorFree, PermGenFree, CodeCacheCommitted, EdenCommitted, SurvivorMax, SurvivorUsed, CodeCacheUsed, PermGenUsed
+* Server: KeepaliveCountTotal, MemoryFreeMin, CpuLoadAvg, RequestCountTotal, RuntimeMemoryFree, ThreadKeepaliveCount, RequestWriteBytesTotal, Uptime, ThreadActiveCount, RuntimeMemory, HeaderSizeMax, UrlLengthMax, SelectKeepaliveCount, InvocationCacheMissCount, HeaderCountMax, nvocationCacheHitCount, PermGenFreeMin, ServerIndex, SendfileCountTotal, RequestTimeTotal, RequestReadBytesTotal, ClientDisconnectCountTotal, ShutdownWaitMax
+* ThreadPool: ThreadIdleMin, ThreadIdleMax, ThreadPriorityMin, ThreadCount, ThreadPriorityQueueSize, ThreadIdleCount, ThreadMax, ThreadCreateCountTotal, ThreadOverflowCountTotal, ThreadTaskQueueSize, ThreadWaitCount, ThreadExecutorMax, ThreadActiveCount, ThreadStartingCount
+* TransactionManager: RollbackCountTotal, CommitCountTotal, CommitResourceFailCountTotal, TransactionCount
+* WebApp: RequestCount, RequestCountTotal, ClientDisconnectCountTotal, RequestReadBytesTotal, RedeployCheckInterval, RequestTimeTotal, RequestWriteBytesTotal, Status500CountTotal
 
 
 ## Custom Dashboard
