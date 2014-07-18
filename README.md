@@ -87,7 +87,7 @@ You can also add excludePatterns (regex) to exclude any metric tree from showing
 
 
 ## Custom Dashboard
-
+![](https://github.com/Appdynamics/resin-monitoring-extension/raw/master/resin_custom_dashboard.png)
 
 ##Contributing
 
