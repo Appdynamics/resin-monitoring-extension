@@ -11,13 +11,13 @@ Resin is a high-performance, scalable Java application server. This eXtension mo
 To use this extension please configure JMX in your instance. For information on enabling JMX, please refer to [http://caucho.com/resin-4.0/admin/resin-admin-console.xtp#JMXConsole] (http://caucho.com/resin-4.0/admin/resin-admin-console.xtp#JMXConsole).
 
 <b>Example Configuration</b>
-  '''
-  <server-multi id-prefix="app-" address-list="${app_servers}" port="6800">
-    <jvm-arg>-Dcom.sun.management.jmxremote.port=9999</jvm-arg>
-    <jvm-arg>-Dcom.sun.management.jmxremote.ssl=false</jvm-arg>
-    <jvm-arg>-Dcom.sun.management.jmxremote.password.file=/home/AppDynamics/Resin/jmxremote.password</jvm-arg>
-  </server-multi>
-  '''
+  ```
+    <server-multi id-prefix="app-" address-list="${app_servers}" port="6800">
+      <jvm-arg>-Dcom.sun.management.jmxremote.port=9999</jvm-arg>
+      <jvm-arg>-Dcom.sun.management.jmxremote.ssl=false</jvm-arg>
+      <jvm-arg>-Dcom.sun.management.jmxremote.password.file=/home/AppDynamics/Resin/jmxremote.password</jvm-arg>
+    </server-multi>
+  ```
 
 ##Installation
 
