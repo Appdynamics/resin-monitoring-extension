@@ -79,7 +79,9 @@ public class ResinMonitor extends AManagedMonitor {
             logger.error("Error JMX-ing into Resin Server ", e);
             metrics.put(ResinMonitorConstants.METRICS_COLLECTED, ResinMonitorConstants.ERROR_VALUE);
         } finally {
-            jmxConnector.close();
+            if(jmxConnector != null) {
+                jmxConnector.close();
+            }
         }
         return metrics;
     }
